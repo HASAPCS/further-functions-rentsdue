@@ -1,0 +1,244 @@
+name: Gradle Build & Test
+
+on: [push, pull_request]
+
+jobs:
+  testSumMethod:
+    name: Test Sum Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testSumMethod"
+
+  testReverseStringMethod:
+    name: Test Reverse String Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testReverseStringMethod"
+
+  testFindMaxMethod:
+    name: Test Find Max Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testFindMaxMethod"
+
+  testIsPalindromeMethod:
+    name: Test Is Palindrome Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testIsPalindromeMethod"
+
+  testFindLongestWordMethod:
+    name: Test Find Longest Word Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testFindLongestWord"
+
+  testCalculateAverageMethod:
+    name: Test Calculate Average Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testCalculateAverage"
+  
+  testIsPrimeMethod:
+    name: Test Is Prime Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testIsPrime"
+
+  testCalculatePowerMethod:
+    name: Test Calculate Power Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testCalculatePower"
+
+  testCountCharacterOccurrencesMethod:
+    name: Test Count Character Occurrences Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testCountCharacterOccurrences"
+
+  testFindLargestNumberMethod:
+    name: Test Find Largest Number Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testFindLargestNumber"
+
+  testCalculateArraySumMethod:
+    name: Test Calculate Array Sum Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testCalculateArraySum"
+
+  testGreetingMethod:
+    name: Test Greeting Method
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Build with Gradle
+        run: ./gradlew build -x test
+
+      - name: Run test
+        run: ./gradlew test --tests "com.example.FunctionsAssignmentTests.testGreeting"
