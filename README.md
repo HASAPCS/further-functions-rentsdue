@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11842298&assignment_repo_type=AssignmentRepo)
 # Java Functions Assignment
 
 In this assignment, you will be demonstrating your understanding of functions in Java. Follow the instructions in the FunctionsAssignment.java file and complete the code as necessary.
